@@ -4,71 +4,43 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Livyden Group</title>
-<meta name="description" content="Livyden Group LLC is a mobile software company in Westfield, New Jersey. Its products include Blanket, an iPhone app that shapes its sound to cover the noise around you.">
-<style>
-  :root { color-scheme: light; --paper: #FBF9F4; --ink: #2B2621; --faint: #766D62; --rule: #E4DDD1; --accent: #8C5E1C; }
-  html { background: var(--paper); }
-  body { margin: 0; padding: 0 20px 72px; color: var(--ink); background: var(--paper);
-         font-family: "Iowan Old Style", "Charter", "Palatino", Georgia, ui-serif, serif; line-height: 1.6; font-size: 18px;
-         -webkit-font-smoothing: antialiased; }
-  main { max-width: 36rem; margin: 0 auto; }
-  h1 { font-size: 2.4rem; font-weight: 400; line-height: 1.15; letter-spacing: -0.01em; margin: 4rem 0 0.35rem; }
-  h2 { font-size: 1.15rem; font-weight: 600; margin: 3rem 0 0.75rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); }
-  p.meta { color: var(--faint); margin: 0 0 2.5rem; font-size: 0.95rem; font-style: italic; }
-  a { color: inherit; text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
-  a:hover { color: var(--accent); }
-  dt { font-weight: 600; margin-top: 1.25rem; }
-  dd { margin: 0.25rem 0 0; }
-  th, td { text-align: left; vertical-align: top; padding: 0.5rem 0.75rem 0.5rem 0; border-bottom: 1px solid var(--rule); font-size: 0.95rem; }
-  th { font-weight: 600; color: var(--faint); font-style: italic; }
-  table { border-collapse: collapse; width: 100%; margin: 1rem 0 1.5rem; }
-  .product { display: grid; grid-template-columns: 1fr 11rem; gap: 1.5rem; align-items: start; }
-  .product img { width: 100%; height: auto; border-radius: 1.4rem; border: 1px solid var(--rule); display: block; }
-  .product h3 { font-size: 1.05rem; font-weight: 600; margin: 0 0 0.15rem; }
-  .product .kind { color: var(--faint); font-style: italic; font-size: 0.95rem; margin: 0 0 1rem; }
-  @media (max-width: 34rem) { .product { grid-template-columns: 1fr; } .product img { max-width: 14rem; } }
-  ul { padding-left: 1.2rem; }
-  li { margin-bottom: 0.3rem; }
-  dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.3rem 1.25rem; margin: 0; }
-  dl dt { margin: 0; font-weight: 400; color: var(--faint); font-style: italic; }
-  dl dd { margin: 0; }
-  footer { color: var(--faint); font-size: 0.9rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
-</style>
+<meta name="description" content="Livyden Group LLC is a mobile software company in Westfield, New Jersey. Its first app is Blanket, an iPhone app that shapes its sound to cover the noise around you.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-<h1>Livyden Group</h1>
-<p class="meta">Livyden Group LLC · mobile software · Westfield, New Jersey</p>
+<div class="wrap">
+<nav class="nav"><a class="brand" href="./">Livyden Group</a><a href="#blanket">Blanket</a><a href="blanket/support.html">Support</a><a href="blanket/privacy.html">Privacy</a></nav>
 
-<p>Livyden Group is a mobile software company. We design and build apps for the phone, starting with iPhone. Every app we make follows the same rules:</p>
-<ul>
-<li>It does one job, and does it well.</li>
-<li>It works without an account.</li>
-<li>It keeps your data on your own device. No ads, no tracking, no analytics.</li>
-</ul>
-
-<h2>Products</h2>
-
-<section class="product">
+<header class="hero">
 <div>
-<h3>Blanket</h3>
-<p class="kind">iPhone app · adaptive white noise for sleep</p>
-<p>A sound for people who sleep next to noise: a partner who snores, a street, a neighbour's television. The app does not play recordings. It makes its sound on the phone, and it shapes that sound to cover the noise around you at the lowest volume that works. For four seconds the microphone measures your surroundings and reduces what it hears to eight numbers. Nothing is recorded, and nothing leaves the phone.</p>
-<p>The app requires iOS 17 or later. It is in preparation for the App Store.</p>
-<p><a href="blanket/support.html">Support and common questions</a> · <a href="blanket/privacy.html">Privacy policy</a></p>
+<h1>We make apps that do one job and keep quiet.</h1>
+<p class="lead muted">Livyden Group is a mobile software company in Westfield, New Jersey. We build for the phone, starting with iPhone.</p>
+<div class="rules">
+<div class="rule"><span class="num">1</span><p><b>One job.</b> Each app does one thing and does it well.</p></div>
+<div class="rule"><span class="num">2</span><p><b>No account.</b> You open it and it works.</p></div>
+<div class="rule"><span class="num">3</span><p><b>Your data stays yours.</b> On your phone. No ads, no tracking, no analytics.</p></div>
 </div>
-<img src="blanket/covering.png" width="552" height="1200" alt="The home screen of Blanket. The ring of the sound around the ring of the surroundings, the word Adapting, the tone dial from Rumble to Hiss, and the level slider.">
+</div>
+<div class="hero-art"><div class="phone"><img src="blanket/covering.jpg" width="840" height="1826" alt="The home screen of Blanket. The ring of the sound around the ring of the surroundings, the word Adapting, the tone dial from Rumble to Hiss, and the level slider."></div></div>
+</header>
+
+<section class="product" id="blanket">
+<div>
+<p class="kicker">The first app · iPhone · iOS 17 or later</p>
+<h2>Blanket</h2>
+<p class="muted">A sound for people who sleep beside noise. It is made on the phone, not played from a file. For four seconds the microphone measures your surroundings, and the sound is shaped to cover them at the lowest volume that works. Leave Adapt on and it keeps measuring through the night, five seconds a minute. Nothing is recorded. Nothing leaves the phone.</p>
+<p class="quiet">Sixteen scenes. Seven named for the noise: Partner, Street, Neighbours, Home, Office, Ring, Drip. Nine for a sound: Fan, Rain, Storm, Ocean, Wind, Campfire, Stream, Train, Cabin.</p>
+<div class="actions" style="margin-top:28px"><span class="btn btn-primary">Coming to the App Store</span><a class="btn" href="blanket/support.html">Support</a><a class="btn" href="blanket/privacy.html">Privacy policy</a></div>
+</div>
+<div class="product-art"><div class="phone phone-s"><img src="blanket/scenes.jpg" width="840" height="1826" alt="The Sound sheet: sixteen scenes, grouped by the noise and by the sound."></div><div class="phone phone-s"><img src="blanket/coverage.jpg" width="840" height="1826" alt="The Coverage sheet: the eight bands named, the three zones judged, and the night's events."></div></div>
 </section>
 
-<h2>Contact</h2>
-
-<dl>
+<dl class="contact">
 <dt>Support</dt><dd><a href="mailto:support@livyden.com">support@livyden.com</a></dd>
 <dt>Company</dt><dd>Livyden Group LLC, a New Jersey limited liability company</dd>
 <dt>Location</dt><dd>Westfield, New Jersey, United States</dd>
+<dt>© 2026</dt><dd>Livyden Group LLC · <a href="blanket/support.html">Support</a> · <a href="blanket/privacy.html">Privacy policy</a></dd>
 </dl>
-
-<footer>© 2026 Livyden Group LLC</footer>
-</main>
+</div>
 </body>
 </html>

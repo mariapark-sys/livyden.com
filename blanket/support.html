@@ -5,65 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Blanket Support</title>
 <meta name="description" content="Help for the Blanket app for iPhone: how it measures your surroundings, common questions, and how to reach the developer.">
-<style>
-  :root { color-scheme: light; --paper: #FBF9F4; --ink: #2B2621; --faint: #766D62; --rule: #E4DDD1; --accent: #8C5E1C; }
-  html { background: var(--paper); }
-  body { margin: 0; padding: 0 20px 72px; color: var(--ink); background: var(--paper);
-         font-family: "Iowan Old Style", "Charter", "Palatino", Georgia, ui-serif, serif; line-height: 1.6; font-size: 18px;
-         -webkit-font-smoothing: antialiased; }
-  main { max-width: 36rem; margin: 0 auto; }
-  h1 { font-size: 2.4rem; font-weight: 400; line-height: 1.15; letter-spacing: -0.01em; margin: 4rem 0 0.35rem; }
-  h2 { font-size: 1.15rem; font-weight: 600; margin: 3rem 0 0.75rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); }
-  p.meta { color: var(--faint); margin: 0 0 2.5rem; font-size: 0.95rem; font-style: italic; }
-  a { color: inherit; text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
-  a:hover { color: var(--accent); }
-  dt { font-weight: 600; margin-top: 1.25rem; }
-  dd { margin: 0.25rem 0 0; }
-  th, td { text-align: left; vertical-align: top; padding: 0.5rem 0.75rem 0.5rem 0; border-bottom: 1px solid var(--rule); font-size: 0.95rem; }
-  th { font-weight: 600; color: var(--faint); font-style: italic; }
-  table { border-collapse: collapse; width: 100%; margin: 1rem 0 1.5rem; }
-
-</style>
+<link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<main>
-<h1>Blanket support</h1>
-<p class="meta">For the Blanket app for iPhone · <a href="privacy.html">privacy policy</a> · published by <a href="../">Livyden Group LLC</a></p>
+<div class="wrap">
+<nav class="nav"><a class="brand" href="../">Livyden Group</a><a href="../#blanket">Blanket</a><a href="support.html" aria-current="page">Support</a><a href="privacy.html">Privacy</a></nav>
 
-<p>Blanket makes its sound on the phone and shapes it to cover the noise around you. Nothing is recorded or sent anywhere. The questions below cover what most people ask.</p>
-
-<h2>Questions</h2>
-
-<dl>
-<dt>Why does the app ask for the microphone?</dt>
-<dd>To measure how loud your surroundings are in eight frequency bands. With that measurement the sound can be shaped to cover them at the lowest volume that works. The measurement takes four seconds when you press Play, then five seconds a minute while "Adapt to surroundings" is on. The audio is reduced to eight numbers and discarded. With Adapt off, the microphone is never opened.</dd>
-
-<dt>The verdict says "Listening" for a long time.</dt>
-<dd>After Play, the app makes two checks about a minute apart and waits until they agree before it reports. In quiet surroundings this takes about two minutes. If it never changes, the microphone may be covered, for example by a pillow or a case. Or microphone access may have been denied in Settings › Privacy &amp; Security › Microphone.</dd>
-
-<dt>The sound starts quietly and rises over ten seconds.</dt>
-<dd>That is deliberate on the phone's speaker: the microphone sits next to the speaker, so the surroundings are measured while the sound is still low. In earbuds the sound starts at once. Settings › Playback › Start offers "Quiet" instead, which keeps silence for the four seconds of measurement.</dd>
-
-<dt>The sound gets louder in the night.</dt>
-<dd>Adapt raised the level because the surroundings got louder, for example when snoring started. It rises at most by the "Can rise" amount set in Settings: 3, 6, or 9 dB above your level. It falls again when the surroundings are quiet. The morning line and the Coverage sheet show when it moved and by how much.</dd>
-
-<dt>There is no Lock Screen card.</dt>
-<dd>"Play with other apps" is on. In that mode iOS treats Blanket as a secondary sound under your audiobook or podcast and shows no card for it. Turn the switch off in Settings to get the card back.</dd>
-
-<dt>The sound stopped when my earbud came out.</dt>
-<dd>iOS pauses audio when the output device disappears, so that the sound does not suddenly play from the speaker. Press Play on the Lock Screen, or put the earbud back in, to continue.</dd>
-
-<dt>How do I start it without opening the app?</dt>
-<dd>Say "Hey Siri, start Blanket". Or add the Home Screen widget. Or, in the Shortcuts app, create an automation: when Sleep Focus turns on, run "Start Blanket".</dd>
-
-<dt>Does it work with a Bluetooth speaker?</dt>
-<dd>Yes. The app treats a Bluetooth speaker like the phone's own speaker. The sound starts low and rises while the surroundings are measured, and the phone's built-in microphone does the measuring.</dd>
-</dl>
-
-<h2>Contact</h2>
-
-<p>Write to <a href="mailto:support@livyden.com">support@livyden.com</a>. Please include the line from Settings › About (for example "v1.0 · build 36 · a1b2c3d") and your iPhone model.</p>
-
+<div class="page">
+<aside>
+<p class="kicker">Blanket · adaptive white noise</p>
+<h1>Support</h1>
+<p class="muted" style="font-size:15px">The questions below cover what most people ask. For anything else, write to us and include the line from Settings › About (for example "v1.0 · build 36 · a1b2c3d") and your iPhone model.</p>
+<a class="btn btn-primary" href="mailto:support@livyden.com">support@livyden.com</a>
+<ul><li><a href="privacy.html">Privacy policy</a></li><li><a href="adapt-explained.html">How Adapt works</a></li><li><a href="steady-sound.html">Why the sound stays steady</a></li></ul>
+</aside>
+<main class="faq">
+<details open><summary>Why does the app ask for the microphone?</summary><p>To measure how loud your surroundings are in eight frequency bands. With that measurement the sound can be shaped to cover them at the lowest volume that works. The measurement takes four seconds when you press Play, then five seconds a minute while "Adapt to surroundings" is on. The audio is reduced to eight numbers and discarded. With Adapt off, the microphone is never opened.</p></details>
+<details><summary>The verdict says "Listening" for a long time.</summary><p>After Play, the app makes two checks about a minute apart and waits until they agree before it reports. In quiet surroundings this takes about two minutes. If it never changes, the microphone may be covered, for example by a pillow or a case. Or microphone access may have been denied in Settings › Privacy &amp; Security › Microphone.</p></details>
+<details><summary>The sound starts quietly and rises over ten seconds.</summary><p>That is deliberate on the phone's speaker: the microphone sits next to the speaker, so the surroundings are measured while the sound is still low. In earbuds the sound starts at once. Settings › Playback › Start offers "Quiet" instead, which keeps silence for the four seconds of measurement.</p></details>
+<details><summary>The sound gets louder in the night.</summary><p>Adapt raised the level because the surroundings got louder, for example when snoring started. It rises at most by the "Can rise" amount set in Settings: 3, 6, or 9 dB above your level. It falls again when the surroundings are quiet. The morning line and the Coverage sheet show when it moved and by how much.</p></details>
+<details><summary>There is no Lock Screen card.</summary><p>"Play with other apps" is on. In that mode iOS treats Blanket as a secondary sound under your audiobook or podcast and shows no card for it. Turn the switch off in Settings to get the card back.</p></details>
+<details><summary>The sound stopped when my earbud came out.</summary><p>iOS pauses audio when the output device disappears, so that the sound does not suddenly play from the speaker. Press Play on the Lock Screen, or put the earbud back in, to continue.</p></details>
+<details><summary>How do I start it without opening the app?</summary><p>Say "Hey Siri, start Blanket". Or add the Home Screen widget. Or, in the Shortcuts app, create an automation: when Sleep Focus turns on, run "Start Blanket".</p></details>
+<details><summary>Does it work with a Bluetooth speaker?</summary><p>Yes. The app treats a Bluetooth speaker like the phone's own speaker. The sound starts low and rises while the surroundings are measured, and the phone's built-in microphone does the measuring.</p></details>
 </main>
+</div>
+
+<footer class="foot"><span>© 2026 Livyden Group LLC · Westfield, New Jersey</span><a href="support.html">Support</a><a href="privacy.html">Privacy policy</a></footer>
+</div>
 </body>
 </html>
