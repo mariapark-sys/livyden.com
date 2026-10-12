@@ -12,15 +12,15 @@
   --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
 }
 
-/* ---------- Colour tokens. Light is the default: warm paper, near-black ink. ---------- */
+/* ---------- Colour tokens. Light is the app's Lantern face (mint-grey paper, deep teal); dark is its Horizon face (amber on night). ---------- */
 :root {
-  --bg: #fdfcf9;
-  --surface: #f2efe7;
-  --text: #1a1713;
-  --muted: #5c564e;
-  --border: #d5cfc2;
-  --accent: #8a2e1c;
-  --accent-soft: #f1e7e2;
+  --bg: #f6f9f8;
+  --surface: #eef3f1;
+  --text: #14211e;
+  --muted: #5c6e69;
+  --border: #c6d3ce;
+  --accent: #2f6e5e;
+  --accent-soft: #d6ebe3;
   --good: #11632a;
   --good-soft: #e9f1e7;
   --warn: #7a4300;
@@ -34,17 +34,17 @@
   --s2: #863709;
   --s3: #9260da;
   --s4: #25984d;
-  --grid: #e5dfd2;
+  --grid: #dfe8e4;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #16130f;
-    --surface: #221e18;
-    --text: #ece5da;
-    --muted: #a99e91;
-    --border: #3c352c;
-    --accent: #e4a392;
-    --accent-soft: #2b1f1a;
+    --bg: #101013;
+    --surface: #18181d;
+    --text: #f2efe9;
+    --muted: #b5b0a8;
+    --border: #3e3a35;
+    --accent: #e0a860;
+    --accent-soft: #2b2116;
     --good: #7fd69a;
     --good-soft: #17251a;
     --warn: #f0b861;
@@ -55,17 +55,17 @@
     --s2: #9e590d;
     --s3: #a473ee;
     --s4: #09af51;
-    --grid: #2e2821;
+    --grid: #26262b;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #16130f;
-  --surface: #221e18;
-  --text: #ece5da;
-  --muted: #a99e91;
-  --border: #3c352c;
-  --accent: #e4a392;
-  --accent-soft: #2b1f1a;
+  --bg: #101013;
+  --surface: #18181d;
+  --text: #f2efe9;
+  --muted: #b5b0a8;
+  --border: #3e3a35;
+  --accent: #e0a860;
+  --accent-soft: #2b2116;
   --good: #7fd69a;
   --good-soft: #17251a;
   --warn: #f0b861;
@@ -76,7 +76,7 @@
   --s2: #9e590d;
   --s3: #a473ee;
   --s4: #09af51;
-  --grid: #2e2821;
+  --grid: #26262b;
 }
 
 /* ---------- Base text. One measure, left-aligned, generous line spacing. ---------- */
