@@ -28,9 +28,9 @@
 <aside>
 <p class="kicker">Blanket · adaptive white noise</p>
 <h1>Privacy policy</h1>
-<p class="quiet" style="font-size:14px">Effective 4 October 2026. Applies to the Blanket app for iPhone, version 1.0 and later. Published by Livyden Group LLC.</p>
-<div class="callout"><p class="big">No data is collected.</p><p>No account, no analytics, no advertising, no network connection of any kind. Nothing you do in the app leaves your phone.</p></div>
-<ul><li><a href="#microphone">The microphone</a></li><li><a href="#stored">What is stored on the phone</a></li><li><a href="#intents">Siri, Shortcuts and the widget</a></li><li><a href="#children">Children</a></li><li><a href="#changes">Changes to this policy</a></li><li><a href="#contact">Contact</a></li></ul>
+<p class="quiet" style="font-size:14px">Effective 13 October 2026. Applies to the Blanket app for iPhone, version 1.0 and later. Published by Livyden Group LLC.</p>
+<div class="callout"><p class="big">No personal data is collected.</p><p>No account, no advertising, no tracking, no identifier of you or your phone. The one thing the app can send is a daily count of what is used, and only if you turn that on.</p></div>
+<ul><li><a href="#microphone">The microphone</a></li><li><a href="#stored">What is stored on the phone</a></li><li><a href="#usage">Anonymous usage counts</a></li><li><a href="#intents">Siri, Shortcuts and the widget</a></li><li><a href="#children">Children</a></li><li><a href="#changes">Changes to this policy</a></li><li><a href="#contact">Contact</a></li></ul>
 </aside>
 <main>
 <section id="microphone">
@@ -55,7 +55,7 @@
 </section>
 <section id="stored">
 <h2>What is stored on the phone</h2>
-<p>The app saves a small amount of information in its own storage on your phone, so that it can start the way you left it. This information never leaves the phone and is deleted when you delete the app.</p>
+<p>The app saves a small amount of information in its own storage on your phone, so that it can start the way you left it. This information stays on the phone and is deleted when you delete the app. The counts described in the next section are the only thing the app can send, and they are made separately.</p>
 <dl class="stored">
 <dt>Your settings</dt><dd>The scene, the tone, the volume, the "Can rise" limit and the sensitivity for Adapt, and the other switches in Settings.</dd>
 <dt>The last measurement</dt><dd>The eight band levels from the most recent measurement. With them the home screen can draw the shape of your surroundings, and the sound can start already shaped on the next Play.</dd>
@@ -63,17 +63,39 @@
 <dt>Playback state for the widget</dt><dd>Whether the sound is playing, shared with the Home Screen widget through an app group that only this app and its widget can read.</dd>
 </dl>
 </section>
+<section id="usage">
+<h2>Anonymous usage counts</h2>
+<p>The app can send a daily count of what is used, so that we can see which parts of the app matter and where it fails. This is off until you turn it on. The first-run screen asks once, and the switch "Share anonymous usage counts" in Settings turns it on or off at any time.</p>
+<p>When it is on, the app keeps one number per event per day and sends the previous day's numbers the next time it is opened. An event is a short name with a few fixed words attached. The complete list:</p>
+<dl class="stored">
+<dt>Play</dt><dd>The scene (for example Fan or Partner) and the output (speaker, earbuds, headphones, car, TV).</dd>
+<dt>Adapt</dt><dd>Whether "Adapt to surroundings" was turned on or off.</dd>
+<dt>Measured</dt><dd>That a measurement completed, and whether it was for a speaker or for earbuds. Not the measurement itself.</dd>
+<dt>Night</dt><dd>How long the sound played, as one of five ranges (under 15 minutes, up to 1 hour, 1 to 4 hours, 4 to 8 hours, over 8 hours), how it ended (stopped, paused by another app, a device disconnected, a call, or unexpectedly), and whether Adapt was on.</dd>
+<dt>Setting</dt><dd>Which setting was changed and its new value: theme, start, "Can rise", sensitivity, "Play with other apps".</dd>
+<dt>First run</dt><dd>Which of the three first-run answers was chosen, or skip.</dd>
+</dl>
+<p>With every day of counts the app sends the app version and the iOS version (major and minor, for example 26.0), and one random token that is made for that day and deleted with it. The token lets the server count how many phones sent counts on one day. It cannot connect two days, and it cannot be connected to you.</p>
+<p>Concretely, the counts never contain any of these:</p>
+<ul class="plain">
+<li>Your name, an account, an e-mail address, or any identifier of you or of your phone.</li>
+<li>Audio, the eight band levels, or any other number derived from the microphone.</li>
+<li>The time of day of anything. Only the date, in UTC.</li>
+<li>Your location, your IP address, or the device model. The server does not store the address the counts came from.</li>
+</ul>
+<p>The counts are sent over HTTPS to a server we operate (usage.livyden.com) and stored there for at most 12 months. They are not shared with or sold to anyone, and no third-party analytics service is involved. Turning the switch off stops the counting at once and deletes any counts that have not been sent yet; counts already sent cannot be identified, so they cannot be deleted individually.</p>
+</section>
 <section id="intents">
 <h2>Siri, Shortcuts and the widget</h2>
 <p>Start, Stop, and Toggle are App Intents. You can use them through Siri, the Shortcuts app, the Action button, or the Home Screen widget. In every case iOS runs the intent inside the Blanket app on your phone. The app receives no information about you from these requests, and sends none.</p>
 </section>
 <section id="children">
 <h2>Children</h2>
-<p>The app collects no data from anyone, including children.</p>
+<p>The app collects no personal data from anyone, including children. The anonymous counts above contain nothing that identifies a person.</p>
 </section>
 <section id="changes">
 <h2>Changes to this policy</h2>
-<p>A future version of the app may change what it does with the microphone or with stored information. If so, this page will be updated. The effective date at the top will change, and the version that the change applies to will be stated here.</p>
+<p>A future version of the app may change what it does with the microphone, with stored information, or with the anonymous counts. If so, this page will be updated. The effective date at the top will change, and the version that the change applies to will be stated here.</p><p>13 October 2026: the section "Anonymous usage counts" was added, for version 1.0. Before this change the policy said that the app made no network connection.</p>
 </section>
 <section id="contact">
 <h2>Contact</h2>
